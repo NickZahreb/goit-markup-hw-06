@@ -121,7 +121,7 @@
                 <input type="checkbox" name="policy" id="policy" />
                 <label for="policy" class="checkbox-text"
                   >Погоджуюся з розсилкою та приймаю
-                  <a>Умови договору</a></label
+                  <a href="">Умови договору</a></label
                 >
               </div>
               <button class="button" type="submit">Відправити</button>
@@ -507,6 +507,28 @@
             </li>
           </ul>
         </div>
+
+        <form class="form-mail">
+          <h2 class="form-title-mail">Підпишіться на розсилку</h2>
+          <div class="form-flex">
+            <div class="form-field-mail">
+              <label for="mail" class="form-label"></label>
+              <input
+                class="form-imput"
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="Email"
+              />
+            </div>
+            <button class="form-send_button button" type="submit">
+              Підписатися
+              <svg class="icon-send" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
