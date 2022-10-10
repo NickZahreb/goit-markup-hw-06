@@ -806,8 +806,6 @@ ul {
   /* outline: 1px solid green; */
   /* height: 40px; */
   margin-bottom: 10px;
-  display: flex;
-  flex-direction: column;
 
   text-align: left;
 }
@@ -824,7 +822,9 @@ ul {
   margin-bottom: 4px;
 }
 
-.form-label {
+.form-field-title {
+  margin-bottom: 4px;
+
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -832,6 +832,21 @@ ul {
   letter-spacing: 0.01em;
 
   color: #757575;
+}
+
+.form-box {
+  position: relative;
+}
+
+.icon-form {
+  position: absolute;
+
+  top: 50%;
+  left: 12px;
+
+  display: inline-block;
+  transform: translateY(-50%);
+  fill: #212121;
 }
 
 .form-comment textarea::placeholder {
@@ -874,13 +889,13 @@ ul {
 }
 
 .form-imput {
-  height: 50px;
+  width: 100%;
+  height: 40px;
   padding: 11px;
   margin: 0;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
 
-  background-color: var(--background-footer);
   color: rgba(255, 255, 255, 0.6);
 
   font-weight: 400;
@@ -891,6 +906,10 @@ ul {
 }
 
 /* Footer imput Email*/
+.form-mail {
+  margin-left: 93px;
+}
+
 .form-flex {
   display: flex;
   align-items: center;
@@ -914,4 +933,74 @@ ul {
 
 .icon-send {
   margin-left: 10px;
+}
+
+.form-imput-mail {
+  height: 50px;
+  width: 353px;
+  padding: 11px;
+  margin: 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  background-color: var(--background-footer);
+  color: rgba(255, 255, 255, 0.6);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  letter-spacing: 0.03em;
+}
+
+/* Checkbox */
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.icon-checkbox {
+  width: 15px;
+  height: 16px;
+  margin-right: 7px;
+
+  border: 2px solid #212121;
+  border-radius: 4px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox:checked + .icon-checkbox {
+  border-color: #2196f3;
+  background-color: #2196f3;
+  background-origin: border-box;
+  background-size: contain;
+}
+
+.label-checkbox {
+  display: flex;
+
+  align-items: center;
+  outline: 1px #2196f3 solid;
+}
+
+.checkbox-link {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.form-box:hover,
+.form-box:focus {
+  fill: var(--accent-color);
 }
