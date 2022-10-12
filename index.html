@@ -63,10 +63,12 @@
     <main>
       <!-- Hero -->
       <section class="hero overlay">
-        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="button" data-modal-open>
-          Замовити послугу
-        </button>
+        <div class="hero-box">
+          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+          <button type="button" class="button" data-modal-open>
+            Замовити послугу
+          </button>
+        </div>
 
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
@@ -77,54 +79,46 @@
             </button>
             <form class="form modal-form">
               <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
-
+              <label for="name" class="form-label">Імʼя</label>
               <div class="form-field">
-                <label for="name" class="form-label form-box">
-                  <span class="form-field-title">Імʼя</span>
-
-                  <input
-                    class="form-imput"
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder=""
-                  />
-                  <svg class="icon-form" height="18" width="18">
-                    <use href="./images/symbol-defs.svg#icon-name"></use>
-                  </svg>
-                </label>
+                <input
+                  class="form-imput"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder=""
+                />
+                <svg class="icon-form" height="18" width="18">
+                  <use href="./images/symbol-defs.svg#icon-name"></use>
+                </svg>
               </div>
-              <div class="form-field">
-                <label for="tel" class="form-label form-box">
-                  <span class="form-field-title">Телефон</span>
 
-                  <input
-                    class="form-imput"
-                    type="tel"
-                    name="tel"
-                    id="tel"
-                    placeholder=""
-                  />
-                  <svg class="icon-form" height="18" width="18">
-                    <use href="./images/symbol-defs.svg#icon-phone"></use>
-                  </svg>
-                </label>
+              <label for="tel" class="form-label form-box">Телефон</label>
+              <div class="form-field">
+                <input
+                  class="form-imput"
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  placeholder=""
+                />
+                <svg class="icon-form" height="18" width="18">
+                  <use href="./images/symbol-defs.svg#icon-phone"></use>
+                </svg>
               </div>
-              <div class="form-field">
-                <label for="mail" class="form-label form-box">
-                  <span class="form-field-title">Пошта</span>
 
-                  <input
-                    class="form-imput"
-                    type="email"
-                    name="mail"
-                    id="mail"
-                    placeholder=""
-                  />
-                  <svg class="icon-form" height="18" width="18">
-                    <use href="./images/symbol-defs.svg#icon-mail"></use>
-                  </svg>
-                </label>
+              <label for="mail" class="form-label form-box">Пошта</label>
+              <div class="form-field">
+                <input
+                  class="form-imput"
+                  type="email"
+                  name="mail"
+                  id="mail"
+                  placeholder=""
+                />
+                <svg class="icon-form" height="18" width="18">
+                  <use href="./images/symbol-defs.svg#icon-mail"></use>
+                </svg>
               </div>
 
               <div class="form-field form-comment">
